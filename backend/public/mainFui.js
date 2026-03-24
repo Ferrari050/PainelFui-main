@@ -380,7 +380,7 @@ document.getElementById('buttonAdicionar')?.addEventListener('click', abrirModal
 
 document.getElementById('buttonVoltoJa')?.addEventListener('click', function () {
     abrirModalInput("Quanto tempo (minutos)?", "", 1, 180, function (valor) {
-        atualizarUsuario("ocupado", `Volto em ${valor} minutos`);
+        atualizarUsuario("ocupado", `Volto em ${valor} minutos.`);
     });
 });
 
