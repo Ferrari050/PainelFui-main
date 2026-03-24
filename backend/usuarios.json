@@ -3,8 +3,8 @@
     "nome": "João",
     "status": "livre",
     "descricao": "",
-    "senha": "$2b$10$DQGAhdptSeyswbihc0XmZOa4T.w2Jfr1iL/Mca2DcjxALr01qQAeS",
-    "atualizadoEm": "2026-03-24T13:09:21.151Z"
+    "senha": "$2b$10$5ob/r.iu8kP19dyoyuqFNeqf7tNyHgTCjtKAVjcPkLOfvxSSFVXCi",
+    "atualizadoEm": "2026-03-24T13:12:19.222Z"
   },
   "Guilherme": {
     "nome": "Guilherme",
@@ -22,9 +22,9 @@
   },
   "Jonathan": {
     "nome": "Jonathan",
-    "status": "livre",
-    "descricao": "Até amanhã.",
+    "status": "ocupado",
+    "descricao": "Volto em 1 minutos",
     "senha": "$2b$10$Mb7x8umEkUoo60Ypfjn/rOyjIHLVCQ9S1cx0O4qId3rMf942wZZVe",
-    "atualizadoEm": "2026-03-24T13:11:11.379Z"
+    "atualizadoEm": "2026-03-24T13:11:34.058Z"
   }
 }
