@@ -1,0 +1,49 @@
+services:
+  fuibackend:
+    image: "node:22"
+    container_name: fuibackend
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1' # Limita o uso a 50% de um núcleo de CPU
+          memory: '1024M' # Limita a memória a 512 Megabytes
+        reservations:
+          cpus: '0.25' # Garante pelo menos 25% de um núcleo de CPU
+          memory: '256M' # Garante pelo menos 256 Megabytes de memória
+    ports:
+      - "3001:3001"
+    volumes:
+      - type: bind
+        source: /mnt/datadisk/fui/backend
+        target: /app
+    networks:
+      - stack_default
+      - database
+    working_dir: /app
+    command: node server.js
+    labels:
+       - "traefik.enable=true"
+       - "traefik.http.routers.fuibackend.rule=Host(`fui.ibb.unesp.br`)"
+       - "traefik.http.routers.fuibackend.entrypoints=web"
+       - "traefik.http.routers.fuibackend-ssl.rule=Host(`fui.ibb.unesp.br`)"
+       - "traefik.http.routers.fuibackend-ssl.entrypoints=websecure"
+       - "traefik.http.routers.fuibackend-ssl.tls.certresolver=default"
+       - "traefik.http.services.fuibackend-ssl.loadbalancer.server.port=3001"
+       # http to https
+       - "traefik.http.middlewares.fuibackend-redirect.redirectscheme.scheme=https"
+       - "traefik.http.middlewares.fuibackend-redirect.redirectscheme.permanent=true"
+       - "traefik.http.routers.fuibackend.middlewares=fuibackend-redirect"
+
+       # Define a rede correta usada pelo traefik
+       - "traefik.docker.network=stack_default"
+
+    environment:
+      - NODE_ENV=development
+
+networks:
+  stack_default:
+    external: true
+  database:
+    name: database
+    driver: bridge
