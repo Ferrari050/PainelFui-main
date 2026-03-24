@@ -1,10 +1,10 @@
 {
   "João": {
     "nome": "João",
-    "status": "livre",
-    "descricao": "",
+    "status": "ocupado",
+    "descricao": "Almoçando. Volto em 1h",
     "senha": "$2b$10$5ob/r.iu8kP19dyoyuqFNeqf7tNyHgTCjtKAVjcPkLOfvxSSFVXCi",
-    "atualizadoEm": "2026-03-24T13:48:24.360Z"
+    "atualizadoEm": "2026-03-24T15:19:58.864Z"
   },
   "Guilherme": {
     "nome": "Guilherme",
@@ -15,17 +15,17 @@
   },
   "Junior": {
     "nome": "Junior",
-    "status": "",
-    "descricao": "",
-    "senha": "$2b$10$2/ZUs4q.OCp1xvqOxskfieEG0L8btRomkxJhqAbHwhnIX9QHH6wJ2",
-    "atualizadoEm": "2026-03-24T12:08:37.993Z"
+    "status": "ocupado",
+    "descricao": "Almoçando. Volto em 1h",
+    "senha": "$2b$10$kkVdtklnByHgAe8TA08DauhGMTKU0OjyDHl.RI3R7.5lwdMepaTJ2",
+    "atualizadoEm": "2026-03-24T15:10:53.384Z"
   },
   "Jonathan": {
     "nome": "Jonathan",
-    "status": "ocupado",
-    "descricao": "AFÉLIO!",
+    "status": "livre",
+    "descricao": "",
     "senha": "$2b$10$Mb7x8umEkUoo60Ypfjn/rOyjIHLVCQ9S1cx0O4qId3rMf942wZZVe",
-    "atualizadoEm": "2026-03-24T13:47:51.119Z"
+    "atualizadoEm": "2026-03-24T14:03:36.581Z"
   },
   "Arthur": {
     "nome": "Arthur",
@@ -47,5 +47,26 @@
     "descricao": "",
     "senha": "$2b$10$mzQON/wFSWit9xQ/zeHKNOLHWJWyaAJiliuIwmKIDgwJkCJhusRS.",
     "atualizadoEm": "2026-03-24T13:46:30.508Z"
+  },
+  "Tancler": {
+    "nome": "Tancler",
+    "status": "livre",
+    "descricao": "",
+    "senha": "$2b$10$KUp4XPhNDQEQlFwiSvzhq.6UtF7Lr1F0Eu59mJxyjcu46Onk39Fk2",
+    "atualizadoEm": "2026-03-24T14:11:57.969Z"
+  },
+  "Nirsu": {
+    "nome": "Nirsu",
+    "status": "livre",
+    "descricao": "",
+    "senha": "$2b$10$3HoAyJ/Q.myV.cGJ7.mHu.N0mts5vmJeVMKhz0juchtqUrWmzy2tW",
+    "atualizadoEm": "2026-03-24T14:05:28.769Z"
+  },
+  "Hélio": {
+    "nome": "Hélio",
+    "status": "ocupado",
+    "descricao": "fui na dti",
+    "senha": "$2b$10$bJKXpR5Zn4aaLdxE1OBojOMqh3eI1H0VH6g74Sauas1u/QKGOwvyK",
+    "atualizadoEm": "2026-03-24T14:03:45.081Z"
   }
 }

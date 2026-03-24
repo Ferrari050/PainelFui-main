@@ -422,6 +422,25 @@ document.querySelectorAll("#menuHeader button").forEach(btn => {
     });
 });
 
+const params = new URLSearchParams(window.location.search);
+const modoKiosk = params.get("kiosk") === "true";
+
+if (modoKiosk) {
+  document.body.classList.add("kiosk");
+
+  // remove botões do header
+  const botoes = document.querySelector(".botoesDoHeader");
+  if (botoes) botoes.style.display = "none";
+
+  // remove botão de adicionar (se tiver separado)
+  const btnAdd = document.querySelector(".buttonAdicionar");
+  if (btnAdd) btnAdd.style.display = "none";
+}
+
+if (!modoKiosk) {
+  verificarLogin(); // ou sua função atual
+}
+
 // =========================
 // AUTO UPDATE
 // =========================

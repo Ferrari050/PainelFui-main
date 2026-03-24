@@ -101,6 +101,11 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.use((req, res, next) => {
+  res.setHeader("X-Frame-Options", "ALLOWALL");
+  res.setHeader("Content-Security-Policy", "frame-ancestors *");
+  next();
+});
 
 //console.log(process.env.PORT);
 app.listen(process.env.PORT || 3000, () => {
