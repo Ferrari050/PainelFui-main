@@ -125,7 +125,7 @@ function confirmarSenha() {
     // =========================
     else if (ACAO_SENHA === "login") {
 
-        fetch("http://localhost:3000/login", {
+        fetch("https://fui.ibb.unesp.br/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -201,7 +201,7 @@ function verificarSenhaAoEntrar() {
 // ATUALIZAR USUÁRIO
 // =========================
 async function atualizarUsuario(status, descricao, senha = null, verificarSenha = true) {
-    await fetch("http://localhost:3000/usuario", {
+    await fetch("https://fui.ibb.unesp.br/usuario", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -406,6 +406,20 @@ document.getElementById('buttonLimpar')?.addEventListener('click', function () {
 
 document.getElementById('buttonFerias')?.addEventListener('click', function () {
     document.getElementById("modalDataFerias").style.display = "flex";
+});
+
+const menuToggle = document.getElementById("menuToggle");
+const menuHeader = document.getElementById("menuHeader");
+
+menuToggle?.addEventListener("click", () => {
+    menuHeader.classList.toggle("ativo");
+});
+
+
+document.querySelectorAll("#menuHeader button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        menuHeader.classList.remove("ativo");
+    });
 });
 
 // =========================
