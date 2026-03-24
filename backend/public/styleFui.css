@@ -44,7 +44,7 @@ h1 {
 }
 
 body {
-  background: radial-gradient(#284b7f, #284b7fc2) ;
+  background: radial-gradient(#284b7f, #284b7fe3) ;
   margin: 0 auto;
   min-height: 100vh;
 }
