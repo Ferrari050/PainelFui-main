@@ -1,10 +1,10 @@
 {
   "João": {
     "nome": "João",
-    "status": "ocupado",
-    "descricao": "Almoçando. Volto em 1h",
+    "status": "livre",
+    "descricao": "",
     "senha": "$2b$10$5ob/r.iu8kP19dyoyuqFNeqf7tNyHgTCjtKAVjcPkLOfvxSSFVXCi",
-    "atualizadoEm": "2026-03-24T15:19:58.864Z"
+    "atualizadoEm": "2026-03-24T16:39:54.471Z"
   },
   "Guilherme": {
     "nome": "Guilherme",
@@ -68,5 +68,12 @@
     "descricao": "fui na dti",
     "senha": "$2b$10$bJKXpR5Zn4aaLdxE1OBojOMqh3eI1H0VH6g74Sauas1u/QKGOwvyK",
     "atualizadoEm": "2026-03-24T14:03:45.081Z"
+  },
+  "Renato": {
+    "nome": "Renato",
+    "status": "livre",
+    "descricao": "",
+    "senha": "$2b$10$ABPLkt3O55qhr6jjPe32fOPTLd2V3juCDKzw8rxb552/E/kZY7nLm",
+    "atualizadoEm": "2026-03-24T15:51:48.267Z"
   }
 }

@@ -241,7 +241,25 @@ async function carregarDados() {
             const status = (dados[id].status || "").toLowerCase();
 
             if (textoDiv) {
-                textoDiv.textContent = descricao;
+                const data = dados[id].atualizadoEm;
+
+                let dataFormatada = "";
+
+                if (data) {
+                    const d = new Date(data);
+
+                    dataFormatada = d.toLocaleString("pt-BR", {
+                        day: "2-digit",
+                        month: "2-digit",
+                        hour: "2-digit",
+                        minute: "2-digit"
+                    });
+                }
+
+                textoDiv.innerHTML = `
+        ${dataFormatada ? `<span class="hora">[${dataFormatada}]</span>` : ""}
+        <span class="msg">${descricao}</span>
+    `;
             }
 
             // Limpa classes de status antigas
@@ -426,19 +444,19 @@ const params = new URLSearchParams(window.location.search);
 const modoKiosk = params.get("kiosk") === "true";
 
 if (modoKiosk) {
-  document.body.classList.add("kiosk");
+    document.body.classList.add("kiosk");
 
-  // remove botões do header
-  const botoes = document.querySelector(".botoesDoHeader");
-  if (botoes) botoes.style.display = "none";
+    // remove botões do header
+    const botoes = document.querySelector(".botoesDoHeader");
+    if (botoes) botoes.style.display = "none";
 
-  // remove botão de adicionar (se tiver separado)
-  const btnAdd = document.querySelector(".buttonAdicionar");
-  if (btnAdd) btnAdd.style.display = "none";
+    // remove botão de adicionar (se tiver separado)
+    const btnAdd = document.querySelector(".buttonAdicionar");
+    if (btnAdd) btnAdd.style.display = "none";
 }
 
 if (!modoKiosk) {
-  verificarLogin(); // ou sua função atual
+    verificarLogin(); // ou sua função atual
 }
 
 // =========================
