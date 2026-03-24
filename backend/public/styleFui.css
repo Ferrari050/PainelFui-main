@@ -40,7 +40,6 @@
 
 h1 {
   text-align: center;
-  margin-top: 15px;
   color: white;
 }
 
@@ -110,16 +109,6 @@ body {
   border: 1px solid black;
 }
 
-.botaoVermelho {
-  background: radial-gradient(rgb(224, 0, 0), rgb(173, 0, 0));
-  color: white;
-}
-
-.nomeVermelho {
-  color: white;
-  background: radial-gradient(rgb(224, 0, 0), rgb(173, 0, 0));
-}
-
 .deFerias {
   background-color: cyan;
 }
@@ -156,7 +145,8 @@ button:active {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  background-color: white;
+  background-color: #1e3961;
+  color: white;
   font-style: none;
 }
 
@@ -169,7 +159,8 @@ button:active {
   border-radius: 100px;
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: #1e3961;
+  color: white;
 }
 
 .modal-content {
