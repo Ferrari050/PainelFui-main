@@ -1,13 +1,9 @@
-.vermelho {
-  background-color: rgb(255, 35, 35);
-}
-
 .amarelo {
-  background: linear-gradient(rgb(255, 255, 0), rgb(235, 235, 28));
+  background: linear-gradient(rgb(255, 255, 118), rgba(255, 255, 126, 0.822));
 }
 
 .verde {
-  background: linear-gradient(rgb(0, 255, 0), rgb(0, 204, 0));
+  background: linear-gradient(#7aba69, #7bba69b4);
 }
 
 .pfui {
@@ -35,7 +31,7 @@
   justify-content: space-between;
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  background-color: rgb(65, 65, 65);
+  background-color: #284b7f;
   width: 100%;
   font-size: 16px;
   height: 65px;
@@ -43,15 +39,15 @@
 }
 
 h1 {
-  padding-left: 15px;
   text-align: center;
   margin-top: 15px;
   color: white;
 }
 
 body {
-  background: radial-gradient(rgb(41, 41, 41), black);
-  margin: 0px;
+  background: radial-gradient(#284b7f, #284b7fc2) ;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .mainContent {
@@ -100,18 +96,18 @@ body {
 .foto {
   z-index: auto;
   display: block;
-  margin: -3px;
-  padding: -12px;
+  margin: -4px;
+  padding: -13px;
   border-radius: 10px;
   text-align: left;
   position: absolute;
 }
 
 .foto img {
-  height: 4.7vmax;
-  width: 4.7vmax;
+  height: 5vmax;
+  width: 5vmax;
   border-radius: 10px;
-  border: 3px solid white;
+  border: 1px solid black;
 }
 
 .botaoVermelho {
