@@ -15,7 +15,7 @@
   border: 3px solid black;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
-  font-size: 2vw;
+  font-size: 15px;
   color: black;
   font-weight: 600;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .texto {
-  font-size: 0.9vmax;
+  font-size: 18px;
   margin-left: 60px;
 }
 

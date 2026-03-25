@@ -7,6 +7,8 @@ let senhaJaVerificada = false;
 
 let modalInputCallback = null;
 
+setInterval(carregarDados, 3000);
+
 function abrirModalInput(titulo, valorInicial = "", min = 1, max = Infinity, callback) {
     const modal = document.getElementById("modalInput");
     const input = document.getElementById("inputModalValor");
@@ -257,7 +259,7 @@ async function carregarDados() {
                 }
 
                 textoDiv.innerHTML = `
-        ${dataFormatada ? `<span class="hora">[${dataFormatada}]</span>` : ""}
+        ${dataFormatada ? `<span class="hora">[${dataFormatada}]</span><br>` : ""}
         <span class="msg">${descricao}</span>
     `;
             }
@@ -459,7 +461,12 @@ if (!modoKiosk) {
     verificarLogin(); // ou sua função atual
 }
 
+if (modoKiosk) {
+  setInterval(() => {
+    carregarUsuarios(); // sua função que atualiza tela
+  }, 5000);
+}
+
 // =========================
 // AUTO UPDATE
 // =========================
-setInterval(carregarDados, 3000);
